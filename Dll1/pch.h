@@ -4,8 +4,10 @@
 // However, files listed here are ALL re-compiled if any one of them is updated between builds.
 // Do not add files here that you will be updating frequently as this negates the performance advantage.
 
-#ifndef PCH_H
+
+#ifndef PCH_H || DllExport
 #define PCH_H
+#define DllExport   __declspec( dllexport )
 
 // add headers that you want to pre-compile here
 #include "framework.h"
